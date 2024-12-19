@@ -1,0 +1,112 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+.container{
+    width: 100vw;
+    height: 100vh;
+}
+#Heading{
+    height: 5rem;
+    background-color: rgb(6, 2, 30);
+    color: white;
+    text-align: center;
+    font-size: 3rem;
+    line-height: 5rem;
+}
+.choices {
+    display: flex;
+    justify-content: center;
+    margin-top: 5rem;
+    gap: 3rem;
+}
+.choice {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 165px;
+    height: 165px;    
+    border-radius: 50%;
+}
+.choice img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.choice:hover{
+    cursor: pointer;
+    background-color: rgb(6, 2, 30) ;
+}
+.score-board{
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    margin-top: 5rem;
+    gap: 3rem;
+}
+.score{
+    font-size: 2rem;
+    font-weight: 500;
+}
+#your-score , #computer-score{
+    font-size: 4rem;
+}
+
+.message-container{
+    margin-top: 5rem;
+
+}
+#message{
+    display: inline;
+    font-size: 3rem;
+    background-color:rgb(6, 2, 30)  ;
+    color: white;
+    padding: 8px;
+    border-radius: 1rem;
+}
+.restart{
+    margin-top: 5rem;
+}
+#New-Game {
+    font-size: 2rem;
+    border-radius: 1rem;
+    padding: 8px;
+    color: white;
+    background-color: rgb(6, 2, 30);
+}
+@media only screen and (max-width: 720px) {
+    #Heading{
+        height: 3rem;
+        line-height: 3rem;
+        font-size: rem;
+    }
+    .choices{
+        gap: 1rem;
+    }
+    .choice {
+        width:120px;
+        height: 120px;
+    }
+    .choice img{
+        width : 105px;
+        height: 105px;
+    }
+    #message {
+        font-size: 1.7rem;
+        text-wrap: nowrap;
+
+    }
+    #New-Game{
+        font-size: 1.7rem;
+    }
+    #your-score , #computer-score{
+        font-size: 3rem;
+    }
+}
+@media  only screen and (max-width:500px) {
+    #Heading{
+        font-size: 2rem;
+    }
+}
